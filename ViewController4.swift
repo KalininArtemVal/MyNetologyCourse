@@ -25,13 +25,13 @@ class ViewController4: UIViewController{
     func setupButton() {
         buttonLable.layer.cornerRadius = 12
     }
-   
+    
     func setupImage() {
         let image = UIImage(named: "back")
         imageLable.image = image
         imageLable.contentMode = .scaleAspectFill
     }
-
+    
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
