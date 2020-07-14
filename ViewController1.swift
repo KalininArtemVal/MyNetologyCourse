@@ -13,8 +13,6 @@ class ViewController1: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var buttonLable: UIButton!
     
-    
-    
     let appearance = UITabBarItem.appearance()
     let attributes = [NSAttributedString.Key.font:UIFont(name: "American Typewriter", size: 10)]
     let normalTitleFont = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.regular)
@@ -25,11 +23,9 @@ class ViewController1: UIViewController {
         appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
     }
     
-
     func setupButton() {
         buttonLable.layer.cornerRadius = 12
     }
-    
     
     @IBAction func toViewController3(_ sender: Any) {
         performSegue(withIdentifier: "toView3", sender: nil)
@@ -51,9 +47,6 @@ class ViewController1: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? ViewController3 else { return }
         destination.text = textField.text
-        
     }
-
-    
 
 }

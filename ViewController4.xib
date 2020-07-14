@@ -23,7 +23,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6C-Bs-8Wd">
-                    <rect key="frame" x="107" y="308" width="160" height="50"/>
+                    <rect key="frame" x="107.5" y="308" width="160" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="160" id="vdb-Ya-qpE"/>
@@ -45,7 +45,7 @@
                 <constraint firstItem="non-hC-YZM" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bjE-S9-WIG"/>
                 <constraint firstAttribute="bottom" secondItem="non-hC-YZM" secondAttribute="bottom" id="f0s-VW-OQQ"/>
                 <constraint firstItem="non-hC-YZM" firstAttribute="top" secondItem="k6C-Bs-8Wd" secondAttribute="bottom" constant="-358" id="kBs-wf-fWt"/>
-                <constraint firstItem="non-hC-YZM" firstAttribute="leading" secondItem="k6C-Bs-8Wd" secondAttribute="trailing" constant="-267" id="t8k-Bz-KOg"/>
+                <constraint firstItem="k6C-Bs-8Wd" firstAttribute="centerX" secondItem="non-hC-YZM" secondAttribute="centerX" id="tQA-ee-oqc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>

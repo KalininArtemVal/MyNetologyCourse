@@ -10,18 +10,20 @@ import UIKit
 
 class ViewController5: UIViewController {
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
         setupButton()
-        
     }
     
-    
     func setupButton() {
-        let button = UIButton(frame: CGRect(x: 115, y: 350, width: 150, height: 30))
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(button)
+        let centerXConstraint = NSLayoutConstraint(item: button, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0.0)
+        let centerYConstraint = NSLayoutConstraint(item: button, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0.0)
+        NSLayoutConstraint.activate([centerXConstraint, centerYConstraint])
+        
         button.layer.cornerRadius = 12
         button.backgroundColor = .black
         button.setTitle("Remove View", for: .normal)
@@ -29,13 +31,10 @@ class ViewController5: UIViewController {
         view.addSubview(button)
     }
     
-  
-
     @objc func makeMeHappy() {
         let parent = ViewController2()
         willMove(toParent: parent)
         view.removeFromSuperview()
         removeFromParent()
     }
-    
 }

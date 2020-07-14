@@ -27,9 +27,7 @@ class ViewController2: UIViewController {
     }
 
     @IBAction  func unwindToMainViewController(segue: UIStoryboardSegue) {
-        
     }
-    
     
     @IBAction func toForthViewController(_ sender: Any) {
         
@@ -39,8 +37,6 @@ class ViewController2: UIViewController {
         shakeForth()
     }
     
-
-    
     @IBAction func toFifthViewController(_ sender: Any) {
         let vc = ViewController5()
         addChild(vc)
@@ -49,7 +45,6 @@ class ViewController2: UIViewController {
         shakeFifth()
         shakeForth()
     }
-    
     
     func shakeFifth() {
         let animationShake = CAKeyframeAnimation()
@@ -62,6 +57,7 @@ class ViewController2: UIViewController {
         self.buttonToFifthVC.layer.add(animationShake, forKey: "shake")
         self.buttonToFifthVC.layer.position = buttonToFifthVC.center
     }
+    
     func shakeForth() {
         let animationShake = CAKeyframeAnimation()
         animationShake.keyPath = "position.x"

@@ -13,11 +13,9 @@ import UIKit
 
 class ViewController4: UIViewController{
     
-    
     @IBOutlet weak var imageLable: UIImageView!
     @IBOutlet weak var buttonLable: UIButton!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupImage()
